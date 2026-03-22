@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.title-of-category{
+    font-size: 1.5rem;
+    font-weight: 200;
+    color:rgb(68, 65, 65);
+    margin-bottom: 5px;
+}
+
+.category-parent{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.category-container{
+    background-color: white;
+    padding: 5px 0;
+    width: fit-content;
+}
+
+.cards-container{
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
