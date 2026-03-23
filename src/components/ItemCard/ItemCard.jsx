@@ -8,7 +8,7 @@ function ItemCard({ item, cart }){
     const {name, price, picture} = item;
 
     function showConfirmation(){
-        setFloatingConfirmation(floatingConfirmation !== true);
+        setFloatingConfirmation(prevValue => !prevValue);
     }
 
     return (
@@ -21,7 +21,8 @@ function ItemCard({ item, cart }){
             {
                 floatingConfirmation && <ShowConfirmation 
                     item={item}
-                    cart={cart}/>
+                    cart={cart}
+                    setFloatingConfirmation={setFloatingConfirmation}/>
                 }
             
         </>

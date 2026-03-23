@@ -4,9 +4,10 @@ import { useState } from 'react';
 
 function Navbar({cart}){
     const [floatingBox, setFloatingBox] = useState(false);
+    
 
     function showCartWindow(){
-        setFloatingBox(floatingBox !== true);
+        setFloatingBox(prevValue => !prevValue);
     }
 
     return(
@@ -27,8 +28,8 @@ function Navbar({cart}){
             {
                 floatingBox && 
                 <CartWindow 
-                    showCartWindow={showCartWindow}
-                    cart={cart}  
+                    setFloatingBox={setFloatingBox}
+                    cart={cart}
                 />
                 }
             
