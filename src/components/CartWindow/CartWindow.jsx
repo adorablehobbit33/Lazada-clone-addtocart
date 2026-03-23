@@ -21,20 +21,21 @@ function CartWindow({setFloatingBox, cart}){
 
     return(
         <div ref={boxRef} className="cart-window-container">
-            <div className="close-button-container">
+            <div className="cart-header">
+                <h1 className="cart-header-title">Cart Items</h1>
                 <button className="close-button" onClick={() => setFloatingBox(false)}>
                     <img src="src\components\CartWindow\db\xmark-solid.png" alt="exit" className="exit-button"></img>
                 </button>
-                
             </div>
-            <h1>Cart Items</h1>
-            {cart.items.map(cartItem => {
-                return(
-                    <CartItem 
-                        key={cartItem.cartItemID} 
-                        cartItem={cartItem} />
-                )
-            })}
+            <div className="cart-cards-container">
+                {cart.items.map(cartItem => {
+                    return(
+                        <CartItem 
+                            key={cartItem.cartItemID} 
+                            cartItem={cartItem} />
+                    )
+                })}
+            </div>
         </div>
     )
 }

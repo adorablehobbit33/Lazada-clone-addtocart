@@ -31,7 +31,7 @@ function Navbar({cart}){
                     setFloatingBox={setFloatingBox}
                     cart={cart}
                 />
-                }
+            }
             
         </div>
     )

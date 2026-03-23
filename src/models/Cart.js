@@ -6,13 +6,19 @@ class Cart{
     }
 
     addToCart(item){
-        const itemExists = this.items.some(cartItem => cartItem.cartItemID === item.cartItemID);
+        const itemExists = this.items.some(cartItem => cartItem.item.uniqueID === item.uniqueID);
 
         if(!itemExists){
             this.items.push(new CartItem(item, 1));
             console.log(`SUCCESS: Added ${item.name} in cart`);
         }else{
-            console.log("ERROR");
+            //  Look for the id, then increase quantity
+            this.items.forEach(itemInItems => {
+                if(item.uniqueID === itemInItems.item.uniqueID){
+                    itemInItems.increase();
+                }
+            })
+            console.log(`SUCCESS: Added quantity of $${item.name}`);
         }
     }
 

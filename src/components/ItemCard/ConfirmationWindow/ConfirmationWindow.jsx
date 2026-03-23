@@ -1,12 +1,11 @@
-import "./ShowConfirmation.css";
+import "./ConfirmationWindow.css";
 import { useEffect, useRef } from 'react';
 
 function ShowConfirmation({item, cart, setFloatingConfirmation}){
     const {name} = item;
-    const boxRef = useRef();
-    
-    useEffect(() => {
 
+    const boxRef = useRef();    //  useRef creates a global state
+    useEffect(() => {
         function clickOutsideOfContainer(event){
             if(boxRef.current && !boxRef.current.contains(event.target)){
                 setFloatingConfirmation(false);
@@ -18,13 +17,15 @@ function ShowConfirmation({item, cart, setFloatingConfirmation}){
         return(() => {
             document.removeEventListener("mousedown", clickOutsideOfContainer)
         });
-
     }, [setFloatingConfirmation]);
 
     return(
         <div ref={boxRef} className="confirmation-container">
-            <h1>Are you sure you want to add {name} to cart?</h1>
-            <button onClick={() => cart.addToCart(item)}>Yes</button>
+            <p>Are you sure you want to add <b>{name}</b> to cart?</p>
+            <button onClick={() => {
+                        setFloatingConfirmation(false); cart.addToCart(item)
+                    }
+                } className="add-to-cart-button">Add to cart</button>
         </div>
     )
 }

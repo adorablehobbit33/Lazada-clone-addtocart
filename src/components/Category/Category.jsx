@@ -1,28 +1,53 @@
 import ItemCard from "../ItemCard/ItemCard";
 import "./Category.css"
-
 import Accessory from "../../models/Accessory";
 import Appliance from "../../models/Appliance";
 import Gadget from "../../models/Gadget";
 
 const items = [
-  new Accessory("Perfume", "1.99", "https://img.lazcdn.com/g/p/eee1b2dab4cee4b60cb78d213f234d9b.jpg_400x400q80.jpg_.avif"),
-  new Gadget("USB cable", "5.99", "https://img.lazcdn.com/g/p/bce1da24a29479e675abc9b68277eb63.jpg_400x400q80.jpg_.avif"),
-  new Appliance("Electric Fan", "7.99", "https://img.lazcdn.com/g/p/eee1b2dab4cee4b60cb78d213f234d9b.jpg_400x400q80.jpg_.avif"),
-  new Accessory("Watch", "19.99", "https://img.lazcdn.com/g/p/eee1b2dab4cee4b60cb78d213f234d9b.jpg_400x400q80.jpg_.avif"),
-  new Accessory("Perfume", "1.99", "https://img.lazcdn.com/g/p/eee1b2dab4cee4b60cb78d213f234d9b.jpg_400x400q80.jpg_.avif"),
-  new Gadget("USB cable", "5.99", "https://img.lazcdn.com/g/p/bce1da24a29479e675abc9b68277eb63.jpg_400x400q80.jpg_.avif"),
-  new Appliance("Electric Fan", "7.99", "https://img.lazcdn.com/g/p/eee1b2dab4cee4b60cb78d213f234d9b.jpg_400x400q80.jpg_.avif"),
-  new Accessory("Watch", "19.99", "https://img.lazcdn.com/g/p/eee1b2dab4cee4b60cb78d213f234d9b.jpg_400x400q80.jpg_.avif"),
-  new Accessory("Perfume", "1.99", "https://img.lazcdn.com/g/p/eee1b2dab4cee4b60cb78d213f234d9b.jpg_400x400q80.jpg_.avif"),
-  new Gadget("USB cable", "5.99", "https://img.lazcdn.com/g/p/bce1da24a29479e675abc9b68277eb63.jpg_400x400q80.jpg_.avif"),
-  new Appliance("Electric Fan", "7.99", "https://img.lazcdn.com/g/p/eee1b2dab4cee4b60cb78d213f234d9b.jpg_400x400q80.jpg_.avif"),
-  new Accessory("Watch", "19.99", "https://img.lazcdn.com/g/p/eee1b2dab4cee4b60cb78d213f234d9b.jpg_400x400q80.jpg_.avif"),
-  new Accessory("Perfume", "1.99", "https://img.lazcdn.com/g/p/eee1b2dab4cee4b60cb78d213f234d9b.jpg_400x400q80.jpg_.avif"),
-  new Gadget("USB cable", "5.99", "https://img.lazcdn.com/g/p/bce1da24a29479e675abc9b68277eb63.jpg_400x400q80.jpg_.avif"),
-  new Appliance("Electric Fan", "7.99", "https://img.lazcdn.com/g/p/eee1b2dab4cee4b60cb78d213f234d9b.jpg_400x400q80.jpg_.avif"),
-  new Accessory("Watch", "19.99", "https://img.lazcdn.com/g/p/eee1b2dab4cee4b60cb78d213f234d9b.jpg_400x400q80.jpg_.avif"),
-]
+  new Accessory(
+    "Classic Designer Perfume",
+    "29.99",
+    "public/images/classic-designer-perfume.jpg"
+  ),
+  new Gadget(
+    "Fast Charging USB‑C Cable",
+    "9.99",
+    "public/images/fast-charging-usb-c-cable.jpg"
+  ),
+  new Appliance(
+    "Portable USB Desk Fan",
+    "24.99",
+    "public/images/portable-usb-desk-fan.jpg"
+  ),
+  new Gadget(
+    "Smart Fitness Watch",
+    "149.99",
+    "public/images/smart-fitness-watch.jpg"
+  ),
+
+  new Accessory(
+    "Luxury Floral Perfume",
+    "34.99",
+    "public/images/luxury-floral-perfume.jpg"
+  ),
+  new Gadget(
+    "USB Audio Adapter",
+    "12.49",
+    "public/images/usb-audio-adapter.jpg"
+  ),
+  new Appliance(
+    "Mini Portable Table Fan",
+    "19.99",
+    "public/images/mini-portable-table-fan.jpg"
+  ),
+  new Accessory(
+    "Digital Sport Watch",
+    "79.99",
+    "public/images/digital-sports-watch.jpeg"
+  )
+];
+
 
 function Category({title, type, cart}){
 
