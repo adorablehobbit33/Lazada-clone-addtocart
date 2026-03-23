@@ -1,3 +1,5 @@
+import CartItem from "./CartItem";
+
 class Cart{
     constructor(){
         this.items = [];
@@ -7,7 +9,7 @@ class Cart{
         const itemExists = this.items.some(cartItem => cartItem.cartItemID === item.cartItemID);
 
         if(!itemExists){
-            this.items.push(item)
+            this.items.push(new CartItem(item, 1));
             console.log(`SUCCESS: Added ${item.name} in cart`);
         }else{
             console.log("ERROR");

@@ -7,27 +7,67 @@
     justify-content: space-evenly;
     background-color: white;
     width: 100%;
+    padding: 5px 0;
 }
 
 .lazada-image{
-    width: 200px;
+    width: 150px;
+    flex-wrap: wrap;
+}
+
+.lazada-button{
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.search-area{
+    font-weight: 400;
+    font-size: 14px;
+    padding: 15px 20px;
+    background-color: #eff0f5;
+    width: 40vw;
+    border: none;
+}
+
+.search-area:focus{
+    outline: none;
 }
 
 .search-lazada{
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 5px;
+    background-color: #f57224;
+    border-radius: 2px;
+    overflow: hidden;
 }
 
 .search-button{
-    background-color: transparent;
-    height: 25px;
-    padding: 0;
+    background-color: #f57224;
     border: none;
+    margin: 10px;
+    height: 25px;
     cursor: pointer;
 }
+
 .search-button img{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    object-fit: cover;
+}
+
+.cart-button{
+    background-color: transparent;
+    border: none;
+    margin: 10px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.cart-button img{
     height: 100%;
     width: 100%;
     object-fit: cover;
