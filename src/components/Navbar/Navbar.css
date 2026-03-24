@@ -72,3 +72,18 @@
     width: 100%;
     object-fit: cover;
 }
+
+@media (max-width: 500px){
+    .lazada-image{
+        width: 100px;
+    }
+
+    .search-area{
+        padding: 10px 15px;
+        font-size: 11px;
+    }
+
+    .search-button{
+        height: 12px;
+    }
+}
