@@ -13,16 +13,16 @@ function Navbar({cart}){
     return(
         <div className="navbar-lazada">
             <a href="/" className="lazada-button">
-                <img src="\images\navbar-db\lazada-image.png" className="lazada-image" />
+                <img src={`${import.meta.env.BASE_URL}/images/navbar-db/lazada-image.png`} className="lazada-image" />
             </a>
             <div className="search-lazada">
                 <input type="search" placeholder="Search in Lazada" className="search-area" />
                 <button onClick={() => console.log("Clicked search button")} className="search-button">
-                    <img src="\images\navbar-db\magnifying-glass-solid.png" alt="magnifying glass" />
+                    <img src={`${import.meta.env.BASE_URL}/images/navbar-db/magnifying-glass-solid.png`} alt="magnifying glass" />
                 </button>
             </div>
             <button onClick={showCartWindow} className="cart-button">
-                <img src="\images\navbar-db\cart-arrow-down-solid.png" alt="shopping cart" />
+                <img src={`${import.meta.env.BASE_URL}/images/navbar-db/cart-arrow-down-solid.png" alt="shopping cart`} />
             </button>
 
             {

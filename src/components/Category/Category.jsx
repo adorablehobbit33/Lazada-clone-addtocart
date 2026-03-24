@@ -8,43 +8,43 @@ const items = [
   new Accessory(
     "Classic Designer Perfume",
     "29.99",
-    "/images/classic-designer-perfume.jpg"
+    `${import.meta.env.BASE_URL}/images/classic-designer-perfume.jpg`
   ),
   new Gadget(
     "Fast Charging USB‑C Cable",
     "9.99",
-    "/images/fast-charging-usb-c-cable.jpg"
+    `${import.meta.env.BASE_URL}/images/fast-charging-usb-c-cable.jpg`
   ),
   new Appliance(
     "Portable USB Desk Fan",
     "24.99",
-    "/images/portable-usb-desk-fan.jpg"
+    `${import.meta.env.BASE_URL}/images/portable-usb-desk-fan.jpg`
   ),
   new Gadget(
     "Smart Fitness Watch",
     "149.99",
-    "/images/smart-fitness-watch.jpg"
+    `${import.meta.env.BASE_URL}/images/smart-fitness-watch.jpg`
   ),
 
   new Accessory(
     "Luxury Floral Perfume",
     "34.99",
-    "/images/luxury-floral-perfume.jpg"
+    `${import.meta.env.BASE_URL}/images/luxury-floral-perfume.jpg`
   ),
   new Gadget(
     "USB Audio Adapter",
     "12.49",
-    "/images/usb-audio-adapter.jpg"
+    `${import.meta.env.BASE_URL}/images/usb-audio-adapter.jpg`
   ),
   new Appliance(
     "Mini Portable Table Fan",
     "19.99",
-    "/images/mini-portable-table-fan.jpg"
+    `${import.meta.env.BASE_URL}/images/mini-portable-table-fan.jpg`
   ),
   new Accessory(
     "Digital Sport Watch",
     "79.99",
-    "/images/digital-sports-watch.jpeg"
+    `${import.meta.env.BASE_URL}/images/digital-sports-watch.jpeg`
   )
 ];
 
