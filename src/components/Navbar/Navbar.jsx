@@ -17,7 +17,7 @@ function Navbar({cart}){
             </a>
             <div className="search-lazada">
                 <input type="search" placeholder="Search in Lazada" className="search-area" />
-                <button onClick={() => console.log("hello world")} className="search-button">
+                <button onClick={() => console.log("Clicked search button")} className="search-button">
                     <img src="src\components\Navbar\db\magnifying-glass-solid.png" alt="magnifying glass" />
                 </button>
             </div>

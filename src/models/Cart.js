@@ -18,7 +18,7 @@ class Cart{
                     itemInItems.increase();
                 }
             })
-            console.log(`SUCCESS: Added quantity of $${item.name}`);
+            console.log(`SUCCESS: Added quantity of ${item.name}`);
         }
     }
 
