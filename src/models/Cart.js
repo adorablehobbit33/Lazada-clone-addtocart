@@ -32,7 +32,7 @@ class Cart{
             });
             console.log(`SUCCESS: Removed ${item.name} in cart`);
         }else{
-            console.log(`FAILED: ${item.name} doesn't exist in cart`)
+            console.log(`FAILED: ${item.name} already exist in cart`)
         }
     }
 }
