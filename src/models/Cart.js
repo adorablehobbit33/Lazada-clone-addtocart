@@ -10,7 +10,7 @@ class Cart{
 
         if(!itemExists){
             this.items.push(new CartItem(item, 1));
-            console.log(`SUCCESS: Added ${item.name} in cart`);
+            console.log(`SUCCESS: Added ${item.name} to cart`);
         }else{
             //  Look for the id, then increase quantity
             this.items.forEach(itemInItems => {
