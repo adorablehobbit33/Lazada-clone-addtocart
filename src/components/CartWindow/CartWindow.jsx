@@ -24,7 +24,7 @@ function CartWindow({setFloatingBox, cart}){
             <div className="cart-header">
                 <h1 className="cart-header-title">Cart Items</h1>
                 <button className="close-button" onClick={() => setFloatingBox(false)}>
-                    <img src={`{${import.meta.env.BASE_URL}}/images/cart-window-db/xmark-solid.png`} alt="exit" className="exit-button"></img>
+                    <img src={`${import.meta.env.BASE_URL}images/cart-window-db/xmark-solid.png`} alt="exit" className="exit-button"></img>
                 </button>
             </div>
             <div className="cart-cards-container">
