@@ -22,7 +22,7 @@ function Navbar({cart}){
                 </button>
             </div>
             <button onClick={showCartWindow} className="cart-button">
-                <img src={`${import.meta.env.BASE_URL}images/navbar-db/cart-arrow-down-solid.png" alt="shopping cart`} />
+                <img src={`${import.meta.env.BASE_URL}images/navbar-db/cart-arrow-down-solid.png`} alt="shopping cart" />
             </button>
 
             {
