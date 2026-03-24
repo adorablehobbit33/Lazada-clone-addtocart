@@ -9,7 +9,7 @@ function CartItem({cartItem}){
             </div>
             <div className="cart-item-description">
                 <p className="cart-item-name">{item.name}</p>
-                <p className="cart-item-price">₱{item.price}</p>
+                <p className="cart-item-price">₱{cartItem.getSubTotal()}</p>
                 <p className="cart-item-quantity">Quantity: {quantity}</p>
             </div>
         </div>
