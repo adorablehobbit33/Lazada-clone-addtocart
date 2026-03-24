@@ -7,7 +7,6 @@ function CartWindow({setFloatingBox, cart}){
     useEffect(() => {
         function clickOutsideContainer(event){
             if(boxRef.current && !boxRef.current.contains(event.target)){
-                console.log("clicked")
                 setFloatingBox(false);
             }
 
