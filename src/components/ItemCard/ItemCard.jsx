@@ -14,7 +14,7 @@ function ItemCard({ item, cart }){
     return (
         <>
             <button className="card-container" onClick={toggleConfirmationWindow}>
-                <img src={picture} className="card-picture" alt={picture} />
+                <img src={picture} className="card-picture" alt={name} />
                 <p className="card-name">{name}</p>
                 <p className="card-price">₱{price}</p>
             </button>
